@@ -1,0 +1,24 @@
+1. How to resolve error like?
+-> Traceback (most recent call last):
+  File "/home/prashant/Documents/practice/python/py-imgprocessing/py_imgprocessor/py_imgprocessor/main.py", line 1, in <module>
+    from .pdf.utils import PDFTool
+ImportError: attempted relative import with no known parent package
+
+solution:
+-> first approach if your code or project intended to be module then you can excute it like below
+cmd: python -m py_imgprocessor.main
+
+solution 2:
+-> second approach if your code or project you want to run like normal python script you can do so by.
+cmd: export PYTHONPATH=/path/to/parent_directory_of_py_imgprocessor:$PYTHONPATH
+eg: export PYTHONPATH=/home/prashant/Documents/practice/python/py-imgprocessing/py_imgprocessor:$PYTHONPATH
+cmd: python py_imgprocessor/main.py
+
+-> still has an error then check, is it python was set in system path.
+-> python -c "import sys; print(sys.path)"
+
+
+2. how to run tests?
+->
+python -m unittest discover -v
+python tests/test_pdf_tool.py -v
