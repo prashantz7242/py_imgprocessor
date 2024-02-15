@@ -8,9 +8,11 @@ Sphinx==1.8.5
 twine==1.14.0
 
 pytest==6.2.4
-black==21.7b0
+
 
 # Code quality
 # ------------------------------------------------------------------------------
 flake8==7.0.0  # https://github.com/pycqa/flake8
 flake8-isort==6.0.0  # https://github.com/gforcada/flake8-isort
+pre-commit==3.3.3  # https://github.com/pre-commit/pre-commit
+black==23.7.0 # https://github.com/psf/black
